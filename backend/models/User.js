@@ -11,14 +11,14 @@ requires:true,
  email:{
     type:String,
 requires:true,
-
+unique:true
 
 
  },
  password:{
     type:String,
     requires:true,
-    unique:true
+   
 
  },
  date:{
@@ -32,5 +32,5 @@ requires:true,
   
 });
 const User=mongoose.model('user',UserSchema);
-User.createIndexes();
+
 module.exports=User;
